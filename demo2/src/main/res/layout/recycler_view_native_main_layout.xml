@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#fffccc"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/list_recycler_view_native_but_1"
+            style="@style/TextViewStyle"
+            android:text="list标准" />
+
+        <Button
+            android:id="@+id/list_recycler_view_native_but_2"
+            style="@style/TextViewStyle"
+            android:text="list垂直反向" />
+
+        <Button
+            android:id="@+id/list_recycler_view_native_but_3"
+            style="@style/TextViewStyle"
+            android:text="list水平" />
+
+        <Button
+            android:id="@+id/list_recycler_view_native_but_4"
+            style="@style/TextViewStyle"
+            android:text="list水平反向" />
+
+        <Button
+            android:id="@+id/grid_recycler_view_native_but_1"
+            style="@style/TextViewStyle"
+            android:text="grid标准" />
+
+        <Button
+            android:id="@+id/grid_recycler_view_native_but_2"
+            style="@style/TextViewStyle"
+            android:text="grid垂直反向" />
+
+        <Button
+            android:id="@+id/grid_recycler_view_native_but_3"
+            style="@style/TextViewStyle"
+            android:text="grid水平" />
+
+        <Button
+            android:id="@+id/grid_recycler_view_native_but_4"
+            style="@style/TextViewStyle"
+            android:text="grid水平反向" />
+
+        <Button
+            android:id="@+id/staggered_recycler_view_native_but_1"
+            style="@style/TextViewStyle"
+            android:text="staggered标准" />
+
+        <Button
+            android:id="@+id/staggered_recycler_view_native_but_2"
+            style="@style/TextViewStyle"
+            android:text="staggered垂直反向" />
+
+        <Button
+            android:id="@+id/staggered_recycler_view_native_but_3"
+            style="@style/TextViewStyle"
+            android:text="staggered水平" />
+
+        <Button
+            android:id="@+id/staggered_recycler_view_native_but_4"
+            style="@style/TextViewStyle"
+            android:text="staggered水平反向" />
+    </LinearLayout>
+</ScrollView>

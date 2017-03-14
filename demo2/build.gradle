@@ -1,0 +1,80 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 24
+    buildToolsVersion "24.0.2"
+
+    defaultConfig {
+        applicationId "com.myplayer"
+        minSdkVersion 19
+        targetSdkVersion 24
+        versionCode 1
+        versionName "1.0"
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+    sourceSets {//src下的Java
+        main {
+            java.srcDirs = ['src/main/videoView视频', 'src/main/MediaPlayer声音', 'src/main/java',
+                            'src/main/WebView(按钮回调Android响应)', 'src/main/数据库', 'src/main/dialog',
+                            'src/main/MyXListViewHeader', 'src/main/Graph(柱状图_recyclerView)',
+                            'src/main/抓取全局异常（Exception）', 'src/main/ListView(侧滑删除)',
+                            'src/main/picasso(加载网络图片)', 'src/main/add_label(动态添加标签)',
+                            'src/main/文件', 'src/main/XListView', 'src/main/ScrollViewListView',
+                            'src/main/拍照', 'src/main/EventBusAndBroadcast(自定义广播和EventBus)',
+                            'src/main/FoldingLineLTextView(折行TextView)', 'src/main/utils', 'src/main/recyclerview',
+                            'src/main/VR', 'src/main/Download', 'src/main/rtmpPlayer', 'src/main/AppleListView',
+                            'src/main/获取签名文件信息']
+        }
+    }
+}
+repositories {//下面引入在src平级的libs目录！下面VR引入arr文件必须加这个
+    flatDir {
+        dirs 'libs'
+    }
+}
+dependencies {
+    //    compile fileTree(dir: 'libs', include: ['*.jar'])
+    //    testCompile 'junit:junit:4.12'
+    //    compile 'com.android.support:appcompat-v7:23.+'
+    //    ------   greenDAO数据库    ------
+    compile fileTree(dir: 'libs', include: ['*.jar'])
+    compile 'org.greenrobot:greendao:2.2.0'
+    //    ------   graph用的(柱状图)   -------
+    compile 'com.android.support:recyclerview-v7:+'
+    //    ------   加载网络图片   -------
+    compile 'com.squareup.picasso:picasso:2.5.2'
+    //    ------   图片放大   -------
+    compile 'com.github.chrisbanes.photoview:library:1.2.4'
+    //    ------   添加标签   -------
+    compile project(':addlabel_library')
+    //    ------   eventbus   -------
+    compile 'de.greenrobot:eventbus:2.4.0'
+
+    //    ------   recyclerview   -------
+    compile 'com.android.support:appcompat-v7:+'
+    compile 'com.android.support:cardview-v7:+'
+    compile project(':recyclerview-swipe')
+    compile 'com.android.support:design:+'
+
+    //    ------   VR   -------
+//*.jar：只包含了class文件与清单文件，不包含资源文件，如图片等所有res中的文件。
+//*.aar：包含所有资源，class以及res资源文件全部包含
+    compile(name: 'common', ext: 'aar')
+    compile(name: 'commonwidget', ext: 'aar')
+    compile(name: 'panowidget', ext: 'aar')//
+    compile(name: 'videowidget', ext: 'aar')//引入libs文件中的arr文件
+    //    ------   VR   -------
+
+//    ------   rtmp   -------
+    compile files('libs/pldroid-player-1.3.0.jar')
+    compile 'com.qiniu:happy-dns:0.2.+'
+//    ------   rtmp   -------
+
+
+}
+

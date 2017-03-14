@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#00000000"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="150px"
+        android:background="#666600"
+        android:gravity="center">
+
+        <TextView
+            android:id="@+id/title_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#000000"
+            android:text="标题"
+            android:textSize="30dp" />
+    </LinearLayout>
+
+    <com.XListView.view.XListView
+        android:id="@+id/xListView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/title"
+        android:background="#ffffff">
+
+    </com.XListView.view.XListView>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#00000000"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <com.XListView.view.MyImage
+            android:id="@+id/topView_iv"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:background="#33ff0000"
+            android:src="@mipmap/ic_launcher" />
+
+    </LinearLayout>
+
+</RelativeLayout>

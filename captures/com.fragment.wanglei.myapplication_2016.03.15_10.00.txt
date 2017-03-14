@@ -1,0 +1,157 @@
+CURRENT STATS:
+System memory usage:
+  SOn /Norm: 1 samples:
+    Cached: 1.4GB min, 1.4GB avg, 1.4GB max
+    Free: 99MB min, 99MB avg, 99MB max
+    ZRam: 0.00 min, 0.00 avg, 0.00 max
+    Kernel: 125MB min, 125MB avg, 125MB max
+    Native: 111MB min, 111MB avg, 111MB max
+
+Per-Package Stats:
+  * com.fragment.wanglei.myapplication / u0a328 / v1:
+      * com.fragment.wanglei.myapplication / u0a328 / v1:
+               TOTAL: 99% (12MB-16MB-58MB/9.1MB-14MB-56MB over 10)
+                 Top: 99% (12MB-16MB-58MB/9.1MB-14MB-56MB over 10)
+          (Last Act): 0.28% (9.9MB-9.9MB-9.9MB/8.2MB-8.2MB-8.2MB over 1)
+            (Cached): 0.15%
+
+Summary:
+  * com.fragment.wanglei.myapplication / u0a328 / v1:
+           TOTAL: 99% (12MB-16MB-58MB/9.1MB-14MB-56MB over 10)
+             Top: 99% (12MB-16MB-58MB/9.1MB-14MB-56MB over 10)
+      (Last Act): 0.28% (9.9MB-9.9MB-9.9MB/8.2MB-8.2MB-8.2MB over 1)
+        (Cached): 0.15%
+
+Run time Stats:
+  SOff/Norm: +2s3ms
+  SOn /Norm: +20m47s819ms (running)
+      TOTAL: +20m49s822ms
+
+Memory usage:
+  Kernel : 125MB (8 samples)
+  Native : 111MB (8 samples)
+  Top    : 17MB (23 samples)
+  ImpFg  : 147MB (51 samples)
+  ImpBg  : 641 (2 samples)
+  Service: 49MB (68 samples)
+  Receivr: 8.4KB (26 samples)
+  LastAct: 38KB (12 samples)
+  CchAct : 24KB (11 samples)
+  CchEmty: 28MB (30 samples)
+  Cached : 1.4GB (8 samples)
+  Free   : 99MB (8 samples)
+  TOTAL  : 2.0GB
+  ServRst: 603 (4 samples)
+
+          Start time: 2016-03-15 09:40:08
+  Total elapsed time: +20m49s845ms (partial) libart.so
+
+AGGREGATED OVER LAST 24 HOURS:
+System memory usage:
+  SOff/Norm: 11 samples:
+    Cached: 803MB min, 1.1GB avg, 1.6GB max
+    Free: 101MB min, 258MB avg, 781MB max
+    ZRam: 0.00 min, 0.00 avg, 0.00 max
+    Kernel: 102MB min, 119MB avg, 129MB max
+    Native: 107MB min, 116MB avg, 121MB max
+  SOn /Norm: 11 samples:
+    Cached: 897MB min, 1.2GB avg, 1.5GB max
+    Free: 99MB min, 216MB avg, 699MB max
+    ZRam: 0.00 min, 0.00 avg, 0.00 max
+    Kernel: 108MB min, 121MB avg, 128MB max
+    Native: 111MB min, 116MB avg, 119MB max
+
+Per-Package Stats:
+  * com.fragment.wanglei.myapplication / u0a328 / v1:
+      * com.fragment.wanglei.myapplication / u0a328 / v1:
+               TOTAL: 27% (9.9MB-15MB-58MB/8.0MB-12MB-56MB over 53)
+                 Top: 27% (9.9MB-15MB-58MB/8.0MB-12MB-56MB over 53)
+          (Last Act): 5.0% (9.9MB-9.9MB-9.9MB/8.2MB-8.2MB-8.2MB over 3)
+            (Cached): 13% (12MB-13MB-21MB/10MB-11MB-19MB over 11)
+
+Summary:
+  * com.fragment.wanglei.myapplication / u0a328 / v1:
+           TOTAL: 27% (9.9MB-15MB-58MB/8.0MB-12MB-56MB over 53)
+             Top: 27% (9.9MB-15MB-58MB/8.0MB-12MB-56MB over 53)
+      (Last Act): 5.0% (9.9MB-9.9MB-9.9MB/8.2MB-8.2MB-8.2MB over 3)
+        (Cached): 13% (12MB-13MB-21MB/10MB-11MB-19MB over 11)
+
+Run time Stats:
+  SOff/Norm: +9h10m0s970ms
+  SOn /Norm: +3h2m43s222ms
+      TOTAL: +12h12m44s192ms
+
+Memory usage:
+  Kernel : 120MB (154 samples)
+  Native : 116MB (154 samples)
+  Persist: 347MB (585 samples)
+  Top    : 49MB (1111 samples)
+  ImpFg  : 233MB (2345 samples)
+  ImpBg  : 37MB (836 samples)
+  Service: 143MB (3564 samples)
+  Receivr: 74KB (2405 samples)
+  LastAct: 13MB (35 samples)
+  CchAct : 1.9MB (13 samples)
+  CchEmty: 30MB (1857 samples)
+  Cached : 1.1GB (154 samples)
+  Free   : 248MB (154 samples)
+  TOTAL  : 2.4GB
+  ServRst: 3.2KB (1295 samples)
+
+          Start time: 2016-03-14 08:58:23
+  Total elapsed time: +1d0h14m42s735ms (partial) libart.so
+
+AGGREGATED OVER LAST 3 HOURS:
+System memory usage:
+  SOff/Norm: 2 samples:
+    Cached: 1.1GB min, 1.3GB avg, 1.6GB max
+    Free: 117MB min, 408MB avg, 699MB max
+    ZRam: 0.00 min, 0.00 avg, 0.00 max
+    Kernel: 102MB min, 106MB avg, 109MB max
+    Native: 107MB min, 108MB avg, 110MB max
+  SOn /Norm: 2 samples:
+    Cached: 1.4GB min, 1.5GB avg, 1.5GB max
+    Free: 99MB min, 152MB avg, 204MB max
+    ZRam: 0.00 min, 0.00 avg, 0.00 max
+    Kernel: 111MB min, 118MB avg, 125MB max
+    Native: 111MB min, 111MB avg, 112MB max
+
+Per-Package Stats:
+  * com.fragment.wanglei.myapplication / u0a328 / v1:
+      * com.fragment.wanglei.myapplication / u0a328 / v1:
+               TOTAL: 30% (11MB-15MB-58MB/8.5MB-13MB-56MB over 13)
+                 Top: 30% (11MB-15MB-58MB/8.5MB-13MB-56MB over 13)
+          (Last Act): 44% (9.9MB-9.9MB-9.9MB/8.2MB-8.2MB-8.2MB over 3)
+            (Cached): 0.04%
+
+Summary:
+  * com.fragment.wanglei.myapplication / u0a328 / v1:
+           TOTAL: 30% (11MB-15MB-58MB/8.5MB-13MB-56MB over 13)
+             Top: 30% (11MB-15MB-58MB/8.5MB-13MB-56MB over 13)
+      (Last Act): 44% (9.9MB-9.9MB-9.9MB/8.2MB-8.2MB-8.2MB over 3)
+        (Cached): 0.04%
+
+Run time Stats:
+  SOff/Norm: +40m8s377ms
+  SOn /Norm: +44m21s296ms
+      TOTAL: +1h24m29s673ms
+
+Memory usage:
+  Kernel : 112MB (32 samples)
+  Native : 110MB (32 samples)
+  Persist: 259MB (73 samples)
+  Top    : 49MB (129 samples)
+  ImpFg  : 227MB (337 samples)
+  ImpBg  : 27MB (24 samples)
+  Service: 113MB (453 samples)
+  Receivr: 247KB (287 samples)
+  LastAct: 25MB (4 samples)
+  CchAct : 3.6KB (3 samples)
+  CchEmty: 32MB (204 samples)
+  Cached : 1.4GB (32 samples)
+  Free   : 280MB (32 samples)
+  TOTAL  : 2.6GB
+  ServRst: 8.6KB (132 samples)
+
+          Start time: 2016-03-14 21:36:17
+  Total elapsed time: +12h24m40s843ms (partial) libart.so

@@ -1,0 +1,46 @@
+<resources>
+
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/graph_column</item><!--通知栏那条的颜色-->
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>  <!-- Base application theme. -->
+
+    <!-- -dialog- -->
+    <style name="style_dialog">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textColor">@color/dialog_text_color</item>
+        <item name="android:textSize">20sp</item>
+    </style>
+
+    <style name="Theme_dialog">
+        <item name="android:windowBackground">@color/lucency</item>
+        <item name="android:windowNoTitle">true</item>
+    </style>
+    <!-- -dialog- -->
+    <style name="AppTheme1" parent="Theme.AppCompat.NoActionBar">
+        <item name="colorPrimary">#9ed04b</item>
+        <item name="colorPrimaryDark">#9ed04b</item>
+        <!--<item name="colorPrimaryDark">#1565C0</item>-->
+        <item name="colorAccent">#E91E63</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowSoftInputMode">stateHidden|stateAlwaysHidden</item>
+        <item name="android:launchMode">singleTop</item>
+    </style>
+
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+    <style name="TextViewStyle">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">60dp</item>
+        <item name="android:textSize">18sp</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="android:layout_marginTop">5dp</item>
+    </style>
+</resources>

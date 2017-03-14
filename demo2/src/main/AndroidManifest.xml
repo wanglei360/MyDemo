@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.myplayer">
+
+    <uses-permission android:name="android.permission.INTERNET" /> <!-- 联网的权限 -->
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" /> <!-- 写sd卡权限 -->
+
+
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" /><!--拍照-->
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" /><!--拍照-->
+
+    <uses-permission android:name="android.permission.CHANGE_CONFIGURATION" />
+
+    <!--rtmp-->
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <!--rtmp-->
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name="main.mainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name="com.MediaPlayer.MediaPlayerActivity" />
+        <activity android:name="webView.WebViewDemo" />
+        <activity android:name="db.dbActivity" />
+        <activity android:name="com.dialog.DialogActivity" />
+        <activity android:name="com.XListView.XListViewActivity" />
+        <activity android:name="com.graph.GraphActivity" />
+        <activity android:name="com.exception.ExceptionActivity" />
+        <activity android:name="com.ListView.SwipeMenuListViewActivity" />
+        <activity
+            android:name="picasso.PicassoActivity"
+            android:configChanges="orientation|keyboard|keyboardHidden|screenSize" />
+        <activity android:name="gong_yong.BigImageActivity" />
+        <activity android:name="com.mylabel.LabelActivity" />
+        <activity android:name="com.myFile.FileActivity" />
+        <activity android:name="myXListView.XListViewActivity" />
+        <activity android:name="com.ScrollViewListView.ScrollViewListViewActivity" />
+        <activity android:name="com.PhotographActivity" />
+        <activity android:name="com.broadcast.eventBus.EventBusActivity" />
+        <activity android:name="com.broadcast.eventBus.ReceiverEventBusActivity" />
+        <activity android:name="com.broadcast.broadcast.BroadcastActivity" />
+        <activity android:name="com.broadcast.EventBusAndBroadcastActivity" />
+        <activity android:name=".VideoActivityMain" />
+        <activity
+            android:name=".video_1.VideoActivity_1"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme1" />
+        <activity android:name=".video_1.VideoActivity_B" />
+        <activity android:name=".video_2.VideoActivity" />
+        <activity android:name="com.FoldingLineLActivity" />
+        <activity android:name="com.recyclerview.plugins.activity.RecyclerViewPluginsMainActivity" />
+        <activity android:name="com.recyclerview.plugins.activity.AllMenuActivity" />
+        <activity android:name="com.recyclerview.plugins.activity.DefineActivity" />
+        <activity android:name="com.recyclerview.plugins.activity.DragSwipeFlagsActivity" />
+        <activity android:name="com.recyclerview.plugins.activity.GridDragMenuActivity" />
+        <activity android:name="com.recyclerview.plugins.activity.ListDragMenuActivity" />
+        <activity android:name="com.recyclerview.plugins.activity.ViewTypeMenuActivity" />
+        <activity android:name="com.recyclerview.plugins.activity.ListSwipeDeleteActivity" />
+        <activity android:name="com.broadcast.local_broadcast.LocalBroadcastActivity" />
+        <activity android:name="com.recyclerview.RecyclerViewMainActivity" />
+        <activity android:name="com.recyclerview.android_native.GridRecyclerViewActivity" />
+        <activity android:name="com.recyclerview.android_native.ListRecyclerViewActivity" />
+        <activity android:name="com.recyclerview.android_native.RecyclerViewNativeMainActivity" />
+        <activity android:name="com.recyclerview.android_native.StaggeredRecyclerViewActivity" />
+        <activity android:name="com.myVR.VRMainActivity" />
+        <activity
+            android:name="com.myVR.VrImageActivity"
+            android:screenOrientation="landscape"
+            android:theme="@android:style/Theme.NoTitleBar.Fullscreen" />
+        <activity
+            android:name="com.myVR.VrVideoActivity"
+            android:screenOrientation="landscape"
+            android:theme="@android:style/Theme.NoTitleBar.Fullscreen" />
+        <activity android:name="com.download.MyDownloadActivity" />
+
+
+        <activity android:name="com.rtmp.RTMPMainActivity"
+            android:windowSoftInputMode="stateAlwaysHidden|stateHidden"/>
+        <activity android:name="com.rtmp.PLMediaPlayerActivity" />
+        <activity android:name="com.rtmp.PLAudioPlayerActivity" />
+        <activity android:name="com.rtmp.PLVideoViewActivity" />
+        <activity android:name="com.rtmp.PLVideoTextureActivity" />
+        <activity android:name="com.rtmp.VideoViewActivity" />
+        <activity android:name="com.rtmp.VideoFileActivity" />
+        <activity android:name="com.telephone_book.AppleTelephoneBookDemoActivity" />
+        <activity android:name="com.GetApplicationKeyInfo.GetApplicationKeyInfo" />
+
+
+        <service android:name="com.broadcast.local_broadcast.LocalService"></service>
+
+        <!-- 为广播接收组件注册 -->
+        <receiver android:name="com.broadcast.broadcast.MyReceiver">
+            <intent-filter>
+                <action android:name="android.com.example.broadcastreceiver.action.MYACTION" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </receiver>
+    </application>
+
+</manifest>

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/recycler_view_test_item_person_view"
+    android:layout_width="60dp"
+    android:layout_height="match_parent"
+    android:background="@color/graph_background">
+
+    <TextView
+        android:id="@+id/recycler_view_test_item_person_age_tv"
+        android:layout_width="60dp"
+        android:layout_height="30dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:gravity="center_horizontal"
+        android:singleLine="true"
+        android:textColor="#000000"
+        android:textSize="15sp" />
+
+    <View
+        android:id="@+id/vv"
+        android:layout_width="60dp"
+        android:layout_height="2dp"
+        android:layout_above="@id/recycler_view_test_item_person_age_tv"
+        android:background="#ff0000"></View>
+
+    <Button
+        android:id="@+id/recycler_view_test_item_person_name_tv"
+        android:layout_width="50dp"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/vv"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:id="@+id/recycler_view_test_item_person"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/recycler_view_test_item_person_name_tv"
+        android:layout_centerHorizontal="true"
+        android:background="#00000000"
+        android:textColor="#cccccc" />
+</RelativeLayout>

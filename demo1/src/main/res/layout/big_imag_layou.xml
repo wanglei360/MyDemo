@@ -1,0 +1,23 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    android:gravity="center">
+
+    <uk.co.senab.photoview.PhotoView
+        android:background="@mipmap/ic_launcher"
+        android:id="@+id/big_bitmap_iv"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="33dp"
+        android:onClick="but" />
+    <!--<TextView-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:textSize="55sp"-->
+    <!--android:text="asdfasdfasdfasdfasdfadsfasdf"-->
+    <!--android:layout_height="match_parent"-->
+    <!--android:textColor="#000000"/>-->
+</RelativeLayout>

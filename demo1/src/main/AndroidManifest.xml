@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.fragment.wanglei.myapplication">
+
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />//允许查看当前网络状态
+    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE" />//允许程序改变网络连接状态
+    <uses-permission android:name="android.permission.INTERNET" />//允许访问网络
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />//写入SD卡
+    <uses-permission android:name = "android.permission.GET_TASKS"/>//获取任务站
+    <uses-permission android:name="android.permission.RESTART_PACKAGES" />
+    <application
+        android:name=".MyApplication"
+        android:allowBackup="true"
+        android:icon="@drawable/nature_1"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@android:style/Theme.Black.NoTitleBar">
+        <activity android:name=".activity.MainActivity" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".activity.BigImageActivity"></activity>
+        <activity android:name=".activity.BigImageActivity_1"></activity>
+        <!--<activity android:name=".activity.DBActivity"></activity>-->
+        <activity android:name=".activity.LabelActivity"></activity>
+        <activity android:name=".activity.DBActivity"></activity>
+        <!--<activity android:name=".activity.TestActivity"></activity>-->
+        <meta-data android:name="category" android:value="${key}"></meta-data>
+    </application>
+    <meta-data android:name="design_width" android:value="768">
+    </meta-data>
+    <meta-data android:name="design_height" android:value="1280">
+    </meta-data>
+</manifest>

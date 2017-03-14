@@ -1,0 +1,40 @@
+说明地址：http://blog.csdn.net/ashqal/article/details/48005833
+
+1    图片裁剪
+在列表页尽量使用裁剪后的图片，在查看大图模式下才加载完整的图片。
+图片裁剪示例
+Picasso.with(imageView.getContext()).load(url)
+.resize(dp2px(250),dp2px(250))
+.centerCrop()
+.into(imageView);
+picasso默认情况下会使用全局的ApplicationContext，即开发者传进去Activity，
+picasso也会通过activity获取ApplicationContext。
+
+
+2    查看大图放弃memory cache
+Picasso默认会使用设备的15%的内存作为内存图片缓存，且现有的api无法清空内存缓存。
+我们可以在查看大图时放弃使用内存缓存，图片从网络下载完成后会缓存到磁盘中，加载会从磁盘中加载，
+这样可以加速内存的回收。
+Picasso.with(getApplication())
+.load(mURL)
+.memoryPolicy(NO_CACHE, NO_STORE)
+.into(imageView);
+其中memoryPolicy的NO_CACHE是指图片加载时放弃在内存缓存中查找，NO_STORE是指图片加载完不缓存在内存中。
+
+
+3    MyImageView
+重写ImageView的onDetachedFromWindow方法，在它从屏幕中消失时回调，去掉drawable引用，能加快内存的回收。
+public class MyImageView extends ImageView{
+    @Override
+    protected void onDetachedFromWindow() {
+        super.onDetachedFromWindow();
+        setImageDrawable(null);
+    }
+}
+
+
+
+4    新进程中查看大图
+列表页的内存已经非常稳定，但是查看大图时，大图往往占用了20+m内存，加上现有进程中的内存，非常容易oom，
+在新进程中打开Activity成为比较取巧的避免oom的方式。
+<activity android:name=".DetailActivity" android:process=":picture"/>

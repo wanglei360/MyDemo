@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    android:orientation="vertical">
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:text="进入自定义广播的"
+        android:textColor="#000000"
+        android:textSize="33sp"
+        android:layout_margin="15dp"
+        android:onClick="but_onClik_1"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:text="LocalBroadcast广播（优质）"
+        android:textColor="#000000"
+        android:textSize="33sp"
+        android:layout_margin="15dp"
+        android:onClick="but_onClik_3"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:text="进入EventBus"
+        android:textColor="#000000"
+        android:textSize="33sp"
+        android:layout_margin="15dp"
+        android:onClick="but_onClik_2"/>
+</LinearLayout>

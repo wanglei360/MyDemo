@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#ffffffff"
+    android:orientation="horizontal">
+
+    <Button
+        android:id="@+id/BtnPlay"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1.0"
+        android:background="#ffffffff"
+        android:onClick="onClickPlay"
+        android:text="开始" />
+
+    <Button
+        android:id="@+id/BtnPause"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1.0"
+        android:background="#ffffffff"
+        android:onClick="onClickPause"
+        android:text="暂停" />
+
+    <Button
+        android:id="@+id/BtnResume"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1.0"
+        android:background="#ffffffff"
+        android:onClick="onClickResume"
+        android:text="继续" />
+
+    <Button
+        android:id="@+id/BtnStop"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1.0"
+        android:background="#ffffffff"
+        android:onClick="onClickStop"
+        android:text="停止" />
+
+</LinearLayout>

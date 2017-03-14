@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <Button
+        android:id="@+id/my_id"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:onClick="but"
+        android:text="序列化文件Demo" />
+
+    <Button
+        android:id="@+id/but_2"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:onClick="but"
+        android:text="测试内存泄漏" />
+</LinearLayout>

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#000000"
+    android:orientation="vertical">
+
+
+    <com.telephone_book.FastScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+
+        <com.telephone_book.widget.SosUniversalListView
+            android:id="@+id/lsComposer"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:fastScrollEnabled="true" />
+    </com.telephone_book.FastScrollView>
+
+
+    <!--
+        <com.miss.sos.widget.SosUniversalListView
+        android:layout_width="fill_parent" android:layout_height="fill_parent"
+        android:id="@+id/lsComposer" /> <View
+        class="com.miss.sos.widget.SosUniversalListView"
+        android:id="@+id/lsComposer" android:layout_width="match_parent"
+        android:layout_height="match_parent" android:fastScrollEnabled="true"
+        />
+    -->
+</LinearLayout>

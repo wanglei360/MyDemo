@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#ccffff</color>
+    <color name="colorAccent">#99ffff</color>
+    <color name="color">#00000000</color>
+    <!--dialog-->
+    <color name="dialog_default_background">#ccffff</color>
+    <color name="dialog_wait_default_background">#99000000</color>
+    <color name="dialog_but_selected_background">#99ffff</color>
+    <color name="dialog_text_color">#000000</color>
+    <color name="dialog_line_color">#000000</color>
+    <color name="lucency">#00000000</color>
+    <!--dialog-->
+
+    <!--graph-->
+    <color name="graph_column">#3399ff</color>
+    <color name="graph_background">#ccffff</color>
+    <color name="graph_background1">#FF4081</color>
+    <!--graph-->
+
+
+    <color name="red_normal">#FF0000</color>
+    <color name="red_pressed">#FF6666</color>
+    <color name="green_normal">#37C000</color>
+    <color name="green_pressed">#30A070</color>
+    <color name="purple_normal">#9932CC</color>
+    <color name="purple_pressed">#9F79EE</color>
+
+
+
+</resources>

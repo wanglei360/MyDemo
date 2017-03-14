@@ -1,0 +1,36 @@
+bean和Dao都是当前是用的单独的，DaoMaster和Session是可以共用的，都是有规律的，可以查看
+每次升级要对db.util.DBUpdate类改动，类描述有说明
+
+
+Biao_1_Dao myDao = MyApplication.daoSession.getBiao_1_Dao();
+——————————————————————————————————————————————————————————————————————————————————
+增   主键ID必须为null,否则很容易报错
+myDao.insert(new Biao_1_bean(null, noteText, comment, new Date()));//添加数据，id为null就可以
+myDao.insertInTx(new ArrayList<Biao_1_bean>());//添加一个集合的数据源
+——————————————————————————————————————————————————————————————————————————————————
+删
+myDao.deleteByKey(Long.valueOf(3));//根据自己定的id删除
+myDao.deleteAll();//删除这个表中所有的数据
+myDao.delete(实体JavaBean);//删除表中的这个实体bean的这一条数据
+——————————————————————————————————————————————————————————————————————————————————
+改
+myDao.update(new Biao_1_bean(Long.valueOf(2),"单个更改的数据", "单个更改的数据", new Date()));//更改数据id为2的这一条数据
+
+ArrayList<Biao_1_bean> beenList1 = new ArrayList<>();
+for(int x = 11;x<20;x++){
+   beenList1.add(new Biao_1_bean(Long.valueOf(x), "批量更改的数据", "批量更改的数据", new Date()));
+}
+myDao.updateInTx(beenList1);//批量更改的数据
+——————————————————————————————————————————————————————————————————————————————————
+查
+List<Biao_1_bean> myBeen = myDao.loadAll();
+Biao_1_bean load = myDao.load(id);//按照自己定的id来获取一个bean,查询不到返回null
+List<Biao_1_bean> list = myDao.queryRaw(" WHERE TEXT = ?",new String[]{"批量更改的数据"});
+——————————————————————————————————————————————————————————————————————————————————
+还有其它方法增删改查的原生方法，需要可在找用myDao这个对象
+
+
+
+
+
+

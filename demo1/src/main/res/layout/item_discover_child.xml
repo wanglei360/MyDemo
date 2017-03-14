@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    android:orientation="horizontal">
+
+
+    <TextView
+        android:id="@+id/tv_discover_child"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:layout_weight="1"
+        android:background="#ff9966"
+        android:gravity="center"
+        android:padding="5dp"
+        android:text="discover"
+        android:textColor="#cccccc"
+        android:textSize="20sp" />
+
+
+    <TextView
+        android:id="@+id/tv_discover_child_1"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:layout_weight="1"
+        android:background="#ff9966"
+        android:gravity="center"
+        android:padding="5dp"
+        android:text="discover"
+        android:textColor="#cccccc"
+        android:textSize="20sp" />
+
+</LinearLayout>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:drawable="@mipmap/teacher_1" android:state_selected="true"/>
+ <!-- 设置 -->
+    <item android:drawable="@mipmap/teacher_1" android:state_pressed="true"/>
+ <!-- 按压 -->
+    <item android:drawable="@mipmap/teacher_1" android:state_focused="true"/>
+ <!-- 焦点 -->
+    <item android:drawable="@mipmap/teacher_2"/>
+ <!-- 默认 -->
+
+</selector>
