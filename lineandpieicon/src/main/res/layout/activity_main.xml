@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#fff"
+        android:orientation="vertical">
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_margin="15dp"
+            android:gravity="center"
+            android:onClick="goJianjie"
+            android:padding="3dp"
+            android:text="显示本地html"
+            android:textColor="#000"
+            android:textSize="22sp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:orientation="horizontal">
+
+            <Button
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_margin="15dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:onClick="month"
+                android:padding="3dp"
+                android:text="月"
+                android:textColor="#000"
+                android:textSize="22sp" />
+
+            <Button
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_margin="15dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:onClick="week"
+                android:padding="3dp"
+                android:text="周"
+                android:textColor="#000"
+                android:textSize="22sp" />
+
+            <Button
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_margin="15dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:onClick="day"
+                android:padding="3dp"
+                android:text="日"
+                android:textColor="#000"
+                android:textSize="22sp" />
+
+        </LinearLayout>
+
+
+        <com.github.mikephil.charting.charts.LineChart
+            android:id="@+id/chart_asset"
+            android:layout_width="match_parent"
+            android:layout_height="160dp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:background="#00000000" />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_margin="15dp"
+            android:gravity="center"
+            android:onClick="showPieChart"
+            android:padding="3dp"
+            android:text="饼图显示数据"
+            android:textColor="#000"
+            android:textSize="22sp" />
+
+        <com.github.mikephil.charting.charts.PieChart
+            android:id="@+id/chart2_asset"
+            android:layout_width="match_parent"
+            android:layout_height="150dp" />
+    </LinearLayout>
+</ScrollView>
