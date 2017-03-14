@@ -12,3 +12,6 @@
 <br>5:picasso网络图片的使用
 <br>6:eventbus的使用
 <br>7:vr和rtmp的使用
+<br>8:label标签的使用
+<br>9:拍照,广播,抓取全局异常,文件序列化
+<br>10:饼图和线图
