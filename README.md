@@ -4,6 +4,8 @@
 ![image](https://github.com/wanglei360/MyDemo/blob/master/demo1/src/main/res/mipmap-hdpi/demo2.gif?raw=true) 这是demo2的展示
 
 ![image](https://github.com/wanglei360/MyDemo/blob/master/demo1/src/main/res/mipmap-hdpi/demo5.gif?raw=true) 这是demo5的展示
+
+![image](https://github.com/wanglei360/MyDemo/blob/master/demo1/src/main/res/mipmap-hdpi/%E9%A5%BC%E5%9B%BE%E5%92%8C%E7%BA%BF%E5%9B%BE.gif?raw=true) 饼图和线图和webView展示html文本
 <br>
 <br>1:其中有xutils:3.3.34的图片使用
 <br>2:photoview配合xutils的viewPager样式
