@@ -13,5 +13,4 @@ public interface Constants {
     String DBNAME = "SHU_JU_KU_MING";//数据库名
     int SCHEMA_VERSION = 1;//数据库版本号
     String FILEPATHNAME = "ban_du";
-    String FILEPATHNAME1 = "ban_du55";
 }
