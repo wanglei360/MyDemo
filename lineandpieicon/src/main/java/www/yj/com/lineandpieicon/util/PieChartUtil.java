@@ -18,7 +18,8 @@ import com.google.gson.Gson;
 
 import java.util.ArrayList;
 
-import www.yj.com.myapplication.bean.pieBean;
+import www.yj.com.lineandpieicon.bean.PieBean;
+
 
 /**
  * 创建者：admin
@@ -33,13 +34,13 @@ public class PieChartUtil implements OnChartValueSelectedListener {
     private Typeface typeFace;
     private Context context;
     private String[] mParties;
-    private final pieBean pieBean;
+    private final PieBean pieBean;
 
     public PieChartUtil(PieChart pieChart, Context context, String[] mParties, String pieStr) {
         this.pieChart = pieChart;
         this.context = context;
         this.mParties = mParties;
-        pieBean = jsonToBean(pieStr, pieBean.class);
+        pieBean = jsonToBean(pieStr, PieBean.class);
         initPie();
     }
 

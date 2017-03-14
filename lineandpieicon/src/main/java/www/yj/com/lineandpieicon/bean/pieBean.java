@@ -2,7 +2,7 @@ package www.yj.com.lineandpieicon.bean;
 
 import java.io.Serializable;
 
-public class pieBean implements Serializable {
+public class PieBean implements Serializable {
 
     public String balcance;
 
