@@ -1,32 +1,21 @@
-<?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#fff"
     android:orientation="vertical">
 
-    <Button
-        android:layout_width="match_parent"
-        android:layout_height="50dp"
-        android:onClick="but1"
-        android:text="but1"
-        android:textColor="#000000"
-        android:textSize="22sp" />
-    <!--android:layout_alignParentBottom-->
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
 
-        <VideoView
+        <com.myplayer.video_2.view.VideoView
             android:id="@+id/video_view"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_centerVertical="true" />
+            android:layout_height="wrap_content" />
 
+        <!--虽然在布局上没什么用,但是能保证自己写的MediaController在VideoView上显示-->
         <MediaController
-            android:id="@+id/media_controller"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_alignBottom="@id/video_view"/>
+            android:layout_height="wrap_content" />
     </RelativeLayout>
-
 </LinearLayout>

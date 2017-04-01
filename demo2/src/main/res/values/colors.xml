@@ -29,4 +29,11 @@
 
 
 
+
+    <color name="slip_line_background">#4F4F4F</color>
+    <color name="slip_line_secondaryprogress">#228B22</color>
+    <color name="slip_line_progress">#4EEE94</color>
+
+
+
 </resources>

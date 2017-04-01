@@ -14,7 +14,7 @@
     <!--rtmp-->
     <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
     <uses-permission android:name="android.permission.WAKE_LOCK" />
-    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
     <!--rtmp-->
 
     <application
@@ -57,7 +57,10 @@
             android:screenOrientation="portrait"
             android:theme="@style/AppTheme1" />
         <activity android:name=".video_1.VideoActivity_B" />
-        <activity android:name=".video_2.VideoActivity" />
+        <activity
+            android:name=".video_2.VideoActivity"
+            android:theme="@android:style/Theme.Black.NoTitleBar"
+            android:configChanges="orientation|screenSize|keyboardHidden" />
         <activity android:name="com.FoldingLineLActivity" />
         <activity android:name="com.recyclerview.plugins.activity.RecyclerViewPluginsMainActivity" />
         <activity android:name="com.recyclerview.plugins.activity.AllMenuActivity" />
@@ -85,8 +88,9 @@
         <activity android:name="com.download.MyDownloadActivity" />
 
 
-        <activity android:name="com.rtmp.RTMPMainActivity"
-            android:windowSoftInputMode="stateAlwaysHidden|stateHidden"/>
+        <activity
+            android:name="com.rtmp.RTMPMainActivity"
+            android:windowSoftInputMode="stateAlwaysHidden|stateHidden" />
         <activity android:name="com.rtmp.PLMediaPlayerActivity" />
         <activity android:name="com.rtmp.PLAudioPlayerActivity" />
         <activity android:name="com.rtmp.PLVideoViewActivity" />

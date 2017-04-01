@@ -27,6 +27,11 @@ public class ExceptionActivity extends Activity {private TextView tv;
         getA();
     }
 
+    @Override
+    protected void onDestroy() {
+        super.onDestroy();
+    }
+
     public static void getA() {
 //        try {
             new WWWRE().ee("1");
