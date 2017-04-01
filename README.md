@@ -17,3 +17,4 @@
 <br>8:label标签的使用
 <br>9:拍照,广播,抓取全局异常,文件序列化
 <br>10:饼图和线图
+<br>11:videoView视频/com/myplayer/video_2/VideoActivity.java 可以播放mkv,rmvb,mp4(试验过能播)
